@@ -1,4 +1,4 @@
-const { global } = require('./icon.js')
+const { globalIcon } = require('./icon.js')
 
 /** 首屏窗口属性 */
 module.exports = {
@@ -7,7 +7,7 @@ module.exports = {
   width: 800,
   height: 600,
   resizable: false, // 不允许用户改变窗口大小
-  icon: global, // 应用运行时的标题栏图标
+  icon: globalIcon, // 应用运行时的标题栏图标
   webPreferences: {
     backgroundThrottling: false, // 设置应用在后台正常运行
     nodeIntegration: true, // 设置能在页面使用nodejs的API

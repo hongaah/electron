@@ -21,8 +21,8 @@ function createWindow() {
 }
 
 // 部分 API 在 ready 事件触发后才能使用
-app.whenReady().then(createWindow)
-// app.on('ready', createWindow)
+// app.whenReady().then(createWindow)
+app.on('ready', createWindow)
 
 // 监听所有的窗口都关闭了
 app.on('window-all-closed', () => {

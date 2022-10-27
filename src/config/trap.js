@@ -1,9 +1,9 @@
 const { Tray, Menu } = require('electron')
-const { global } = require('./icon.js')
+const { globalIcon } = require('./icon.js')
 
 /** 应用托盘 */
 module.exports = function (win) {
-  const tray = new Tray(global) // 托盘图标
+  const tray = new Tray(globalIcon) // 托盘图标
 
   tray.setToolTip('electron demo is running') // 托盘提示
 

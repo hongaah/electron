@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "electron .",
-    "dev": "nodemon --watch . --exec electron ."
+    "dev": "nodemon --watch . --exec electron .",
+    "pack": "electron-packager . ElectornPackage --win --out ./ElectornPackage --arch=x64 --app-version=1.0.0 --electron-version=21.1.0 --overwrite  --icon=./src/assets/favicon.ico --ignore=node_modules"
   },
   "keywords": [],
   "author": "",
